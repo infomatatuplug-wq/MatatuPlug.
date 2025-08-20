@@ -1,0 +1,178 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Packages */
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+.card.premium {
+  border: 2px solid gold;
+}
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #444;
+}
+
+/* Upload Form */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+.upload-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.submit-btn {
+  background: #25D366;
+  font-weight: 600;
+}
+.submit-btn:hover {
+  background: #128C7E;
+}
+
+/* Distributed Tracks */
+.tracks-section {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  padding: 50px 20px;
+}
+.tracks-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.tracks-section p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+}
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.songs iframe {
+  width: 300px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Confirmation */
+.confirmation {
+  background: #e8ffe8;
+  color: #2d7a2d;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cookie-banner a {
+  color: #25D366;
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.whatsapp-btn:hover {
+  background: #128C7E;
+}
